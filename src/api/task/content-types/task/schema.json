@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "Task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "BU": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "alert",
+        "complete",
+        "canceled"
+      ],
+      "default": "active"
+    },
+    "nature": {
+      "type": "enumeration",
+      "enum": [
+        "project",
+        "support"
+      ]
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "urgent",
+        "high",
+        "medium",
+        "low"
+      ]
+    }
+  }
+}
