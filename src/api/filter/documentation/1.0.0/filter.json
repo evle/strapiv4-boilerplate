@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/tasks": {
+    "/filters": {
       "get": {
         "responses": {
           "200": {
@@ -20,30 +20,11 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "continue": {
-                                "type": "string"
-                              },
-                              "draft": {
-                                "type": "boolean"
-                              },
-                              "start": {
-                                "type": "string",
-                                "format": "date"
-                              },
-                              "end": {
-                                "type": "string",
-                                "format": "date"
-                              },
-                              "stop": {
-                                "type": "string"
-                              },
-                              "invent": {
-                                "type": "string"
-                              },
-                              "act": {
-                                "type": "string"
-                              },
-                              "effort": {},
+                              "BU": {},
+                              "role": {},
+                              "status": {},
+                              "nature": {},
+                              "priority": {},
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -521,7 +502,7 @@
           }
         },
         "tags": [
-          "Task"
+          "Filter"
         ],
         "parameters": [
           {
@@ -605,7 +586,7 @@
             }
           }
         ],
-        "operationId": "get/tasks"
+        "operationId": "get/filters"
       },
       "post": {
         "responses": {
@@ -624,30 +605,11 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "continue": {
-                              "type": "string"
-                            },
-                            "draft": {
-                              "type": "boolean"
-                            },
-                            "start": {
-                              "type": "string",
-                              "format": "date"
-                            },
-                            "end": {
-                              "type": "string",
-                              "format": "date"
-                            },
-                            "stop": {
-                              "type": "string"
-                            },
-                            "invent": {
-                              "type": "string"
-                            },
-                            "act": {
-                              "type": "string"
-                            },
-                            "effort": {},
+                            "BU": {},
+                            "role": {},
+                            "status": {},
+                            "nature": {},
+                            "priority": {},
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -1104,10 +1066,10 @@
           }
         },
         "tags": [
-          "Task"
+          "Filter"
         ],
         "parameters": [],
-        "operationId": "post/tasks",
+        "operationId": "post/filters",
         "requestBody": {
           "required": true,
           "content": {
@@ -1117,30 +1079,11 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "continue": {
-                        "type": "string"
-                      },
-                      "draft": {
-                        "type": "boolean"
-                      },
-                      "start": {
-                        "type": "string",
-                        "format": "date"
-                      },
-                      "end": {
-                        "type": "string",
-                        "format": "date"
-                      },
-                      "stop": {
-                        "type": "string"
-                      },
-                      "invent": {
-                        "type": "string"
-                      },
-                      "act": {
-                        "type": "string"
-                      },
-                      "effort": {},
+                      "BU": {},
+                      "role": {},
+                      "status": {},
+                      "nature": {},
+                      "priority": {},
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -1184,7 +1127,7 @@
         }
       }
     },
-    "/tasks/{id}": {
+    "/filters/{id}": {
       "get": {
         "responses": {
           "200": {
@@ -1202,30 +1145,11 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "continue": {
-                              "type": "string"
-                            },
-                            "draft": {
-                              "type": "boolean"
-                            },
-                            "start": {
-                              "type": "string",
-                              "format": "date"
-                            },
-                            "end": {
-                              "type": "string",
-                              "format": "date"
-                            },
-                            "stop": {
-                              "type": "string"
-                            },
-                            "invent": {
-                              "type": "string"
-                            },
-                            "act": {
-                              "type": "string"
-                            },
-                            "effort": {},
+                            "BU": {},
+                            "role": {},
+                            "status": {},
+                            "nature": {},
+                            "priority": {},
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -1682,7 +1606,7 @@
           }
         },
         "tags": [
-          "Task"
+          "Filter"
         ],
         "parameters": [
           {
@@ -1696,7 +1620,7 @@
             }
           }
         ],
-        "operationId": "get/tasks/{id}"
+        "operationId": "get/filters/{id}"
       },
       "put": {
         "responses": {
@@ -1715,30 +1639,11 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "continue": {
-                              "type": "string"
-                            },
-                            "draft": {
-                              "type": "boolean"
-                            },
-                            "start": {
-                              "type": "string",
-                              "format": "date"
-                            },
-                            "end": {
-                              "type": "string",
-                              "format": "date"
-                            },
-                            "stop": {
-                              "type": "string"
-                            },
-                            "invent": {
-                              "type": "string"
-                            },
-                            "act": {
-                              "type": "string"
-                            },
-                            "effort": {},
+                            "BU": {},
+                            "role": {},
+                            "status": {},
+                            "nature": {},
+                            "priority": {},
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -2195,7 +2100,7 @@
           }
         },
         "tags": [
-          "Task"
+          "Filter"
         ],
         "parameters": [
           {
@@ -2209,7 +2114,7 @@
             }
           }
         ],
-        "operationId": "put/tasks/{id}",
+        "operationId": "put/filters/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -2219,30 +2124,11 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "continue": {
-                        "type": "string"
-                      },
-                      "draft": {
-                        "type": "boolean"
-                      },
-                      "start": {
-                        "type": "string",
-                        "format": "date"
-                      },
-                      "end": {
-                        "type": "string",
-                        "format": "date"
-                      },
-                      "stop": {
-                        "type": "string"
-                      },
-                      "invent": {
-                        "type": "string"
-                      },
-                      "act": {
-                        "type": "string"
-                      },
-                      "effort": {},
+                      "BU": {},
+                      "role": {},
+                      "status": {},
+                      "nature": {},
+                      "priority": {},
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -2445,7 +2331,7 @@
           }
         },
         "tags": [
-          "Task"
+          "Filter"
         ],
         "parameters": [
           {
@@ -2459,7 +2345,7 @@
             }
           }
         ],
-        "operationId": "delete/tasks/{id}"
+        "operationId": "delete/filters/{id}"
       }
     }
   }

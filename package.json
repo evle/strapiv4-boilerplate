@@ -7,6 +7,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
+    "pilot": "NODE_ENV=production strapi build --no-optimization",
     "strapi": "strapi"
   },
   "dependencies": {

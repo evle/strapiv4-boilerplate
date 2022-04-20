@@ -12,37 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "continue": {
+      "type": "richtext"
     },
-    "BU": {
-      "type": "string"
+    "draft": {
+      "type": "boolean"
     },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "active",
-        "alert",
-        "complete",
-        "canceled"
-      ],
-      "default": "active"
+    "start": {
+      "type": "date"
     },
-    "nature": {
-      "type": "enumeration",
-      "enum": [
-        "project",
-        "support"
-      ]
+    "end": {
+      "type": "date"
     },
-    "priority": {
-      "type": "enumeration",
-      "enum": [
-        "urgent",
-        "high",
-        "medium",
-        "low"
-      ]
+    "stop": {
+      "type": "richtext"
+    },
+    "invent": {
+      "type": "richtext"
+    },
+    "act": {
+      "type": "richtext"
+    },
+    "effort": {
+      "type": "json"
     }
   }
 }

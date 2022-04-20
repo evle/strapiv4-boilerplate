@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filters",
+  "info": {
+    "singularName": "filter",
+    "pluralName": "filters",
+    "displayName": "filter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BU": {
+      "type": "json"
+    },
+    "role": {
+      "type": "json"
+    },
+    "status": {
+      "type": "json"
+    },
+    "nature": {
+      "type": "json"
+    },
+    "priority": {
+      "type": "json"
+    }
+  }
+}
