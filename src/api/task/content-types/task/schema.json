@@ -19,10 +19,12 @@
       "type": "boolean"
     },
     "start": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "end": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "stop": {
       "type": "richtext"
@@ -35,6 +37,12 @@
     },
     "effort": {
       "type": "json"
+    },
+    "player": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player",
+      "inversedBy": "task"
     }
   }
 }

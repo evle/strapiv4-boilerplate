@@ -32,7 +32,8 @@
     },
     "playerID": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "projects": {
       "type": "relation",
@@ -53,6 +54,12 @@
     },
     "BU": {
       "type": "string"
+    },
+    "task": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task.task",
+      "mappedBy": "player"
     }
   }
 }

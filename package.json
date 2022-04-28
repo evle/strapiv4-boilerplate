@@ -12,9 +12,10 @@
   },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.1.8",
-    "@strapi/plugin-i18n": "4.1.7",
+    "@strapi/plugin-i18n": "^4.1.7",
     "@strapi/plugin-users-permissions": "4.1.7",
     "@strapi/strapi": "4.1.7",
+    "axios": "^0.26.1",
     "better-sqlite3": "7.4.6",
     "pg": "^8.7.3",
     "strapi-plugin-wysiwsg-react-md-editor": "^4.1.0"

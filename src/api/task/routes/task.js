@@ -10,7 +10,7 @@ module.exports = createCoreRouter('api::task.task', {
     config:{
         create: {
             policies:[
-                'is-valid-date'
+          
             ]
         }
     }
