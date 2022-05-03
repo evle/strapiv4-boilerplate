@@ -1,7 +1,13 @@
+"use strict";
+
 const axios = require("axios");
 const https = require("https");
 
-const curl = axios.create({
+/**
+ * `curl` middleware.
+ */
+
+ const curl = axios.create({
   httpsAgent: new https.Agent({
     rejectUnauthorized: false,
   }),
@@ -16,4 +22,9 @@ curl.interceptors.response.use(
   }
 );
 
-module.exports = curl;
+module.exports = (config, { strapi }) => {
+  return async (ctx, next) => {
+    strapi.curl = curl
+    await next();
+  };
+};

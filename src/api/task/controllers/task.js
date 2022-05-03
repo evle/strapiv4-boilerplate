@@ -25,7 +25,7 @@ module.exports = createCoreController("api::task.task", ({ strapi }) => ({
         });
       }
     });
-    console.log(data);
+    // console.log(data);
 
     // console.log(projects)
 

@@ -16,7 +16,7 @@ module.exports = {
     }
   },
   testUA: async(ctx, next)=>{
-    strapi.log.info(ctx)
+    // strapi.log.info(ctx)
     try {
       strapi.log.info('Logs work!');
       // a.b = 5  // 程序出错

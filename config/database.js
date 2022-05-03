@@ -1,15 +1,24 @@
-// const path = require('path');
+// const DBConfig = {
+//   connection: {
+//     client: 'sqlite',
+//     connection: {
+//       host: env('DATABASE_HOST', 'localhost'),
+//       port: env.int('DATABASE_PORT', 5432),
+//       database: env('DATABASE_NAME', 'strapi'),
+//       user: env('DATABASE_USERNAME', 'strapi'),
+//       password: env('DATABASE_PASSWORD', 'pwd'),
+//     },
+//     useNullAsDefault: true,
+//   },
+// }
 
 module.exports = ({ env }) => ({
   connection: {
-    client: 'postgres',
+    client: "sqlite",
     connection: {
-      host: env('DATABASE_HOST'),
-      port: env.int('DATABASE_PORT'),
-      database: env('DATABASE_NAME'),
-      user: env('DATABASE_USERNAME'),
-      password: env('DATABASE_PASSWORD'),
+      filename: ".tmp/data.db",
     },
     useNullAsDefault: true,
+    debug: true,
   },
 });
