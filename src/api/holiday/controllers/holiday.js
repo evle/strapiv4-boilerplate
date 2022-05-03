@@ -6,7 +6,7 @@
 
 module.exports = {
   getTotalHour: async (ctx, next) => {
-    
+    console.log(qqw)
     try {
       const hour = await strapi.services["api::holiday.holiday"][
         "getTotalHour"

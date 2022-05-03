@@ -1,16 +1,20 @@
 module.exports = [
-  // built-in middlewares
 
-
+  // ! override built-in errors for better troubleshotting
   'strapi::errors',
-  'strapi::security',
-  'strapi::cors',
+  'global::errors', 
+
+  // TODO: setup origin if PROD
   // {
   //   name:'strapi::cors',
   //   config:{
   //     origin:'http://www.baidu.com'
   //   }
   // },
+
+  // * built-in middlewares 
+  'strapi::cors',
+  'strapi::security',
   'strapi::logger',
   'strapi::query',
   'strapi::body',
@@ -18,15 +22,17 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 
-  // App level: loaded from the './src/middlewares' folder 
+ 
+  // * App level: loaded from the './src/middlewares' folder
   'global::curl',
   'global::respond',
-  'global::error',
+
+
+  // * validate middlewares
   'global::validate',
 
 
-
-  // API level  [API name]/middlewares folder	api::api-name.middleware-name 
+  // * API level  [API name]/middlewares folder	api::api-name.middleware-name 
   'api::holiday.dto'
 
 ];
