@@ -1,11 +1,9 @@
-# 🚀 Team dashboard Server
+# 🚀 A production ready Strapi V4 Boilerplate
 
-[] response 
-[] global error
-[] containerized
-[] token
-[] Project API
-[] User API
+feature:
+- a
+- b
+- c
 
 
 ### `develop`
