@@ -8,13 +8,12 @@ const {
 const standardizeRespond = (ctx) => {
   if (!ctx.originalUrl.includes("/api/") && ctx.body.message) return;
 
-  if (ctx.response.status !== 200) {
-    ctx.body.status = DEFAULT_FAIL_STATUS;
-    ctx.body.message = DEFAULT_FAIL_MESSAGE;
-  } else {
-    ctx.body.status = DEFAULT_SUCCESS_STATUS;
-    ctx.body.message = DEFAULT_SUCCESS_MESSAGE;
-  }
+  ctx.body.status =
+    ctx.response.status !== 200 ? DEFAULT_FAIL_STATUS : DEFAULT_SUCCESS_STATUS;
+  ctx.body.message =
+    ctx.response.status !== 200
+      ? DEFAULT_FAIL_MESSAGE
+      : DEFAULT_SUCCESS_MESSAGE;
 };
 
 const customResConfig = () =>
