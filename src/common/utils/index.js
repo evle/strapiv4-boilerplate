@@ -7,7 +7,7 @@ const {
 
 const standardizeRespond = (ctx) => {
   if (!ctx.originalUrl.includes("/api/") && ctx.body.message) return;
-    console.log(ctx.response.status)
+
   if (ctx.response.status !== 200) {
     ctx.body.status = DEFAULT_FAIL_STATUS;
     ctx.body.message = DEFAULT_FAIL_MESSAGE;
@@ -17,13 +17,12 @@ const standardizeRespond = (ctx) => {
   }
 };
 
-const customResConfig = () => {
-  const resCode = [200, 400];
-
-  return resCode.reduce((acc, cur) => {
-    return (acc[`handlers.${cur}`] = standardizeRespond);
+const customResConfig = () =>
+  [200, 400].reduce((acc, cur) => {
+    acc[`handlers.${cur}`] = standardizeRespond;
+    return acc;
   }, {});
-};
+
 module.exports = {
   customResConfig,
 };

@@ -1,5 +1,5 @@
 const { customResConfig } = require("../src/common/utils");
-console.log(customResConfig())
+
 module.exports = [
 
   {
