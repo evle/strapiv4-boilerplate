@@ -1,8 +1,15 @@
+const { customResConfig } = require("../src/common/utils");
+console.log(customResConfig())
 module.exports = [
 
+  {
+    name: "strapi::responses",
+    config: customResConfig(),
+  },
+
   // ! override built-in errors for better troubleshotting
-  'strapi::errors',
-  'global::errors', 
+  "strapi::errors",
+  "global::errors",
 
   // TODO: setup origin if PROD
   // {
@@ -12,27 +19,23 @@ module.exports = [
   //   }
   // },
 
-  // * built-in middlewares 
-  'strapi::cors',
-  'strapi::security',
-  'strapi::logger',
-  'strapi::query',
-  'strapi::body',
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
+  // * built-in middlewares
+  "strapi::cors",
+  "strapi::security",
+  "strapi::logger",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
 
- 
   // * App level: loaded from the './src/middlewares' folder
-  'global::curl',
-  'global::respond',
-
+  "global::curl",
+  "global::respond",
 
   // * validate middlewares
-  'global::validate',
+  "global::validate",
 
-
-  // * API level  [API name]/middlewares folder	api::api-name.middleware-name 
-  'api::holiday.dto'
-
+  // * API level  [API name]/middlewares folder	api::api-name.middleware-name
+  // 'api::holiday.dto'
 ];
