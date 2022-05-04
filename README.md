@@ -1,10 +1,7 @@
 # 🚀 A production ready Strapi V4 Boilerplate
 
 feature:
-- a
-- b
-- c
-
+- standerdlized reponsed 
 
 ### `develop`
 
