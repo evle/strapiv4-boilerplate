@@ -7,7 +7,7 @@ const https = require("https");
  * `curl` middleware.
  */
 
- const curl = axios.create({
+const curl = axios.create({
   httpsAgent: new https.Agent({
     rejectUnauthorized: false,
   }),
@@ -24,7 +24,7 @@ curl.interceptors.response.use(
 
 module.exports = (config, { strapi }) => {
   return async (ctx, next) => {
-    strapi.curl = curl
+    strapi.curl = curl;
     await next();
   };
 };
