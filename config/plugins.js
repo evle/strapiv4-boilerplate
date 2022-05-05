@@ -5,7 +5,6 @@ module.exports = ({ env }) => ({
         prefix: '/api/',
         responseTransforms: {
           removeAttributesKey: true,
-          removeDataKey: true,
         }
       }
     },
