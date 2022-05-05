@@ -1,7 +1,9 @@
 # 🚀 A production ready Strapi V4 Boilerplate
 
 feature:
-- standerdlized reponsed 
+- Unified response format
+- Easy validation
+
 
 ### `develop`
 

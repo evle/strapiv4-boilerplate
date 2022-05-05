@@ -7,7 +7,7 @@ module.exports = {
      config: {
        auth: false,
        policies: [],
-       middlewares: [],
+       middlewares: ['api::holiday.dto'],
      },
     },
   ],
