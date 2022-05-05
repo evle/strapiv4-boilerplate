@@ -1,10 +1,11 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "filters",
   "info": {
     "singularName": "filter",
     "pluralName": "filters",
-    "displayName": "filter"
+    "displayName": "filter",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

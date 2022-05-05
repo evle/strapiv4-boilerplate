@@ -17,7 +17,7 @@ const standardizeRespond = (ctx) => {
 };
 
 const customResConfig = () =>
-  [200, 400].reduce((acc, cur) => {
+  [200, 400, 500].reduce((acc, cur) => {
     acc[`handlers.${cur}`] = standardizeRespond;
     return acc;
   }, {});

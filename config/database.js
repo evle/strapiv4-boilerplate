@@ -19,6 +19,6 @@ module.exports = ({ env }) => ({
       filename: ".tmp/data.db",
     },
     useNullAsDefault: true,
-    debug: true,
+    debug: false, // show sql statement in console
   },
 });
