@@ -4,7 +4,6 @@ feature:
 - Unified response format
 - Easy validation
 
-
 ### `develop`
 
 ```
