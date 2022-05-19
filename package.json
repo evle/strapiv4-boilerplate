@@ -11,12 +11,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "^4.1.9",
-    "@strapi/plugin-i18n": "^4.1.7",
-    "@strapi/plugin-users-permissions": "4.1.7",
     "@strapi/strapi": "4.1.7",
     "axios": "^0.26.1",
     "better-sqlite3": "7.4.6",
+    "koa-cash": "^4.1.0",
     "lodash": "^1.0.0",
     "node-input-validator": "^4.5.0",
     "pg": "^8.7.3",

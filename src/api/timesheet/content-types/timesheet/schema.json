@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timesheets",
+  "info": {
+    "singularName": "timesheet",
+    "pluralName": "timesheets",
+    "displayName": "timesheet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "member": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::member.member",
+      "inversedBy": "timesheets"
+    },
+    "efforts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::effort.effort",
+      "inversedBy": "timesheets"
+    }
+  }
+}

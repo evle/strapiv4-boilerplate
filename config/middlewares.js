@@ -32,6 +32,7 @@ module.exports = [
   // * App level: loaded from the './src/middlewares' folder
   "global::curl",
   "global::respond",
+  "global::cache",
 
   // * validate middlewares
   "global::validate",

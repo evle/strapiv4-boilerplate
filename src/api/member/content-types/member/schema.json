@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "teams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team",
+      "inversedBy": "members"
+    },
+    "member_name": {
+      "type": "string"
+    },
+    "member_id": {
+      "type": "string"
+    },
+    "timesheets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::timesheet.timesheet",
+      "mappedBy": "member"
+    }
+  }
+}

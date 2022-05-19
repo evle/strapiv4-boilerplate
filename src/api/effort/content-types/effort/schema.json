@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "efforts",
+  "info": {
+    "singularName": "effort",
+    "pluralName": "efforts",
+    "displayName": "effort",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hour": {
+      "type": "integer"
+    },
+    "timesheets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::timesheet.timesheet",
+      "mappedBy": "efforts"
+    },
+    "task": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task.task",
+      "inversedBy": "effort"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": " Task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "task_name": {
+      "type": "string"
+    },
+    "effort": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::effort.effort",
+      "inversedBy": "task"
+    }
+  }
+}
